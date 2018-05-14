@@ -120,7 +120,6 @@ public class DatabaseAccess {
 			try {
 				this.getPstmt().close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -128,14 +127,12 @@ public class DatabaseAccess {
 			try {
 				this.getStmt().close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 		try {
 			this.getCon().close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("Connection closed");
@@ -248,7 +245,7 @@ public class DatabaseAccess {
 				createSt.executeUpdate();
 				System.out.println("User Created");
 				setPermissions(convertUsernameToId(username)); // convert username to database id to set the primary key
-																// because it is auto-increment
+										// because it is auto-increment
 				// logs
 				String text = String.format("Timestamp=%15s Username %15s created   ",new Date().toString(),convertUsernameToId(username));
 				FileAccess.printAdminAction(text);
@@ -401,9 +398,6 @@ public class DatabaseAccess {
 	public void sendMessage(Conversation conv,User messageSender, User messageReceiver, String text) { //procedure conversation_messages , to messages
 		int idMessage = 0;
 		
-//		System.out.println("sendMessage()");
-//		System.out.println(messageSender);
-//		System.out.println(messageReceiver);
 		String query = "INSERT INTO messages (id_sender,id_receiver,content) "  
 				 	 + "VALUES (?,?,?);";
 		String query2 = "INSERT INTO conversation_messages (id_conversation,id_message) "  
@@ -418,9 +412,6 @@ public class DatabaseAccess {
 
 			idMessage=getLastMessageId(messageSender); // getLast created message ID from database by sender
 			// because it is auto-generated from database ,
-			// there is a problem though
-			// show the last message id from an other conversation or message can be
-			// orphaned and not in the conversation_messages tables so it can be lost
 
 			this.setPstmt(con.prepareStatement(query2));
 			pstmt.setInt(1, conv.getId());
@@ -432,7 +423,7 @@ public class DatabaseAccess {
 			// write log
 			FileAccess.fileWriterAccess(conv, message);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 
