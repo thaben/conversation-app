@@ -5,7 +5,7 @@ public class Moderator extends SimpleUser {
 	
 	public Moderator(int id, String password, String username, String email,String accessLevel) {
 		super(id,password, username, email, accessLevel);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Moderator() {
