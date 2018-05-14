@@ -1,7 +1,6 @@
 package com.mypackage;
 
 import java.sql.Timestamp;
-//import java.util.ArrayList;
 
 
 
@@ -11,7 +10,6 @@ public class Conversation {
 	private String title;
 	private User sender;
 	private User receiver;
-	//public static ArrayList<Message> messages=new ArrayList<Message>();
 	private Timestamp dateTime ;
 	
 	
@@ -29,10 +27,7 @@ public class Conversation {
 		this.dateTime=dateTime;
 	}
 	
-	
-	
-	
-	
+
 
 	public int getId() {
 		return id;
