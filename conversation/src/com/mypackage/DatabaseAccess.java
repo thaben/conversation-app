@@ -277,7 +277,7 @@ public class DatabaseAccess {
 			FileAccess.printAdminAction(text);
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}
