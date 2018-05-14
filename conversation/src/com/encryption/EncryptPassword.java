@@ -27,9 +27,7 @@ public class EncryptPassword {
 
 	public String encryptPassword(String str) {
 		this.crypt();
-//		if (str == null || str.length() == 0) {
-//			throw new IllegalArgumentException("String to encrypt cannot be null or zero length");
-//		}
+//	
 
 		digester.update(str.getBytes());
 		byte[] hash = digester.digest();
@@ -45,5 +43,3 @@ public class EncryptPassword {
 	}
 }
 
-//Exception in thread "main" java.lang.IllegalArgumentException: String to encrypt cannot be null or zero length
-//at encryption.EncryptPassword.encryptPassword(EncryptPassword.java:29)
