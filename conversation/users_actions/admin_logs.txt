@@ -1,0 +1,14 @@
+
+Timestamp=Wed Apr 25 00:27:47 EEST 2018 Username  supermoderator changed his permissions to s_moderator  
+Timestamp=Wed Apr 25 00:27:47 EEST 2018 Username              75 created   
+Timestamp=Wed Apr 25 18:03:17 EEST 2018 Username        elareman changed his permissions to simple_user  
+Timestamp=Wed Apr 25 18:03:56 EEST 2018 Username           43221 changed his permissions to s_moderator  
+Timestamp=Wed Apr 25 18:04:49 EEST 2018 Username        elareman changed his permissions to simple_user  
+Timestamp=Wed Apr 25 22:59:35 EEST 2018 Username            asdf changed his permissions to simple_user  
+Timestamp=Wed Apr 25 22:59:35 EEST 2018 Username              49 created   
+Timestamp=Wed Apr 25 23:55:51 EEST 2018 Username          qwerty changed his permissions to moderator  
+Timestamp=Wed Apr 25 23:55:51 EEST 2018 Username              50 created   
+Timestamp=Thu Apr 26 20:22:35 EEST 2018 Username       moderator changed his permissions to moderator  
+Timestamp=Thu Apr 26 20:22:35 EEST 2018 Username              52 created   
+Timestamp=Thu Apr 26 20:22:49 EEST 2018 Username  supermoderator changed his permissions to s_moderator  
+Timestamp=Thu Apr 26 20:22:49 EEST 2018 Username              53 created   
