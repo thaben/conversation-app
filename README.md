@@ -1,4 +1,4 @@
 # 
 ## First java project for coding bootcamp conversation-app
 
-Small project with java-mysql-jdbc-OOP-login-roles
+First project with java-mysql-jdbc-OOP-login-roles , console based application without gui to demonstrate java OOP skills and database connectivity 
